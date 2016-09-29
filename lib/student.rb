@@ -9,4 +9,8 @@ class Student
     @date_of_birth = Date.parse(data['date_of_birth'])
     @height = data['height']
   end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end

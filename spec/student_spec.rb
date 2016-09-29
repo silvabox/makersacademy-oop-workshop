@@ -32,4 +32,8 @@ describe Student do
   it 'has a height' do
     expect(student.height).to eq data['height']
   end
+
+  it 'has a full name' do
+    expect(student.full_name).to eq "#{data['first_name']} #{data['last_name']}"
+  end
 end
