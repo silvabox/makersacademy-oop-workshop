@@ -23,6 +23,10 @@ class Student
     rating <=> other.rating
   end
 
+  def to_s
+    "#{full_name}, rating: #{rating}"
+  end
+
   private
 
   def year_of_birth

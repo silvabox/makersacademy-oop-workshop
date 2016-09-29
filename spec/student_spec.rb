@@ -48,4 +48,8 @@ describe Student do
     expect(student <=> other).to eq 0
     expect(student <=> other).to eq -1
   end
+
+  it 'implements to_s' do
+    expect(student.to_s).to eq 'Sandrine Ortiz, rating: 12'
+  end
 end
