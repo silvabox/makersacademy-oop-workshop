@@ -4,6 +4,10 @@
 The purpose of this workshop is to introduce you to the benefits of OOD by
 giving you the opportunity to refactor some procedural code into an OO design.
 
+The program takes a list of student data and produces an output of student names
+and ratings, ordered by rating.  *Rating* is an arbitrary calculation with no
+specific significance other than it's numeric.
+
 ## Instructions
 Work in groups of 4-5 people.  You should each work on your own local version of the
 code, but collaborate as a group on the solution, sharing code and screens etc.
