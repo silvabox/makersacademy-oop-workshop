@@ -13,4 +13,15 @@ class Student
   def full_name
     "#{first_name} #{last_name}"
   end
+
+  def rating
+    letters_in_name = full_name.scan(/\w/).count
+    year_of_birth / (height + letters_in_name)
+  end
+
+  private
+
+  def year_of_birth
+    date_of_birth.year
+  end
 end

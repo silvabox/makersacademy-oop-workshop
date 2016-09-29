@@ -36,4 +36,8 @@ describe Student do
   it 'has a full name' do
     expect(student.full_name).to eq "#{data['first_name']} #{data['last_name']}"
   end
+
+  it 'has a rating' do
+    expect(student.rating).to eq 12
+  end
 end
