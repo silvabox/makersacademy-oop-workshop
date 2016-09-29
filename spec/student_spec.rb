@@ -40,4 +40,12 @@ describe Student do
   it 'has a rating' do
     expect(student.rating).to eq 12
   end
+
+  it 'is comparable by rating' do
+    other = double(:other)
+    allow(other).to receive(:rating).and_return 0, student.rating, 100
+    expect(student <=> other).to eq 1
+    expect(student <=> other).to eq 0
+    expect(student <=> other).to eq -1
+  end
 end

@@ -19,6 +19,10 @@ class Student
     year_of_birth / (height + letters_in_name)
   end
 
+  def <=>(other)
+    rating <=> other.rating
+  end
+
   private
 
   def year_of_birth
