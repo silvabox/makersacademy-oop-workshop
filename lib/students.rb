@@ -1,7 +1,9 @@
 require 'date'
 require 'yaml'
+require_relative 'student'
 
 students = YAML.load_file('students.yml')
+students.map! { |hash| Student.new(hash) }
 
 def full_name(first_name, last_name)
   "#{first_name} #{last_name}"
